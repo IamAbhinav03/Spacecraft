@@ -1,0 +1,92 @@
+/* Components/ParallaxEffect/ParallaxEffect.css */
+.parallax-container {
+  position: relative;
+  height: 200vh;
+  overflow: hidden;
+  perspective: 10px;
+}
+
+.stars-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  will-change: transform;
+}
+
+.astronaut {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  right: 10%;
+  background-image: url("../../assets/astronaut.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  will-change: transform;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  will-change: transform;
+}
+
+.hero-section h1 {
+  font-size: 96px;
+  letter-spacing: 15px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-section button:hover {
+  transform: scale(1.1);
+}
+
+.about-section {
+  min-height: 100vh;
+  padding: 100px 50px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+/* Add these keyframes for the star twinkling effect */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,28 @@
+/* .desktop-frame {
+  width: 100vw; 
+  height: 100vh;
+  background-image: url("./assets/bg.jpg"); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+} */
+
+/* Adjustments for smaller devices */
+
+.app {
+  min-height: 100vh;
+  background-image: url("./assets/stary-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .desktop-frame {
+    background-size: auto 100vh;
+    background-position: center center;
+  }
+}

@@ -1,0 +1,244 @@
+/* Components/Events/Events.css */
+.events-section {
+  min-height: 100vh;
+  padding: 100px 50px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.events-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* .event-card.expanded {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+} */
+
+.event-card.expanded {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  max-height: 80vh; /* Limit height for scrollability */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative; /* For positioning close button */
+}
+
+.event-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-card.expanded .event-image {
+  height: 100%;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.05);
+}
+
+.event-content {
+  padding: 1.5rem;
+}
+
+.event-name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.event-details {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.event-datetime,
+.event-prize {
+  margin: 0.5rem 0;
+}
+
+.event-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .events-section {
+    padding: 80px 20px;
+  }
+
+  .events-title {
+    font-size: 2.5rem;
+  }
+
+  .event-card.expanded {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card.expanded .event-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-section {
+    padding: 60px 15px;
+  }
+
+  .events-title {
+    font-size: 2rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-content {
+    padding: 1rem;
+  }
+
+  .event-name {
+    font-size: 1.25rem;
+  }
+}
+
+/* Modal Styles */
+.event-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.event-modal-content {
+  background: rgba(23, 23, 23, 0.9);
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  overflow-y: auto;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.register-now-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.register-now-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.register-message {
+  font-size: 1.2rem;
+}
+
+.modal-back-button {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.modal-back-button:hover {
+  background: #0056b3;
+}
+
+/* Ensure it's very visible on mobile */
+@media (max-width: 768px) {
+  .modal-back-button {
+    width: 30%;
+    height: auto;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+  }
+}

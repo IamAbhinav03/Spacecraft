@@ -1,0 +1,53 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px; /* Adjust padding for smaller screens */
+  background-color: rgba(5, 11, 16, 0.53);
+  margin-top: 60px; /* Prevent overlap with navbar */
+}
+
+.about-content {
+  max-width: 700px; /* Adjusted for better readability */
+  color: white;
+  font-size: 1.2rem; /* Reduced font size for better responsiveness */
+  line-height: 1.8; /* Increased for readability */
+  text-align: center; /* Align text to center */
+}
+
+.about-content p {
+  margin-bottom: 20px; /* Reduced spacing between paragraphs */
+}
+
+.about-content ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-content ul li {
+  margin: 10px 0;
+  font-size: 1.1rem; /* Slightly smaller font size */
+}
+
+.about-content ul li::before {
+  content: "⭐ ";
+  color: #b794f4; /* Add a star icon before each list item */
+}
+
+.highlight {
+  color: #f9d423; /* Brighter color for highlights */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .about-content {
+    font-size: 1rem; /* Smaller font size for mobile */
+    line-height: 1.6; /* Adjust line height */
+  }
+}
