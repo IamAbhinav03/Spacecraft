@@ -20,7 +20,7 @@ const Events = () => {
     {
       id: 1,
       name: "Rocket Launch",
-      image: "/src/assets/rocketlaunch.JPG",
+      image: "/Spacecraft/assets/rocketlaunch.JPG",
       date: "09 February, 2025",
       time: "6:00 PM - 9:00 PM",
       venue: "Ashoka Unniversity",
@@ -33,7 +33,7 @@ const Events = () => {
     {
       id: 2,
       name: "Ideathon",
-      image: "/src/assets/ideathon.jpeg",
+      image: "/Spacecraft/assets/ideathon.jpeg",
       date: "08 February, 2025",
       time: "11:00 AM - 01:00 PM",
       venue: "Ashoka University",
@@ -45,7 +45,7 @@ const Events = () => {
     {
       id: 3,
       name: "Quiz",
-      image: "/src/assets/quiz.jpeg",
+      image: "/Spacecraft/assets/quiz.jpeg",
       date: "08 February, 2025",
       time: "11:00 AM - 01:00 PM",
       venue: "Ashoka University",
@@ -68,7 +68,7 @@ const Events = () => {
     {
       id: 5,
       name: "Sunspots Workshop",
-      image: "/src/assets/sunspot.jpeg",
+      image: "/Spacecraft/assets/sunspot.jpeg",
       date: "08 February, 2025",
       time: "03:00 PM - 05:00 PM",
       venue: "Ashoka University",
@@ -80,7 +80,7 @@ const Events = () => {
     {
       id: 6,
       name: "Spectroscopy Workshop",
-      image: "/src/assets/spectroscopy.jpeg",
+      image: "/Spacecraft/assets/spectroscopy.jpeg",
       date: "09 February, 2025",
       time: "03:00 PM - 05:00 PM",
       venue: "Ashoka University",
@@ -92,7 +92,7 @@ const Events = () => {
     {
       id: 7,
       name: "Astrophotography Exhibition",
-      image: "/src/assets/exhibition.jpg",
+      image: "/Spacecraft/assets/exhibition.jpg",
       date: "8-9th February, 2025",
       time: "01:00 PM - 07:00 PM",
       venue: "Ashoka University",

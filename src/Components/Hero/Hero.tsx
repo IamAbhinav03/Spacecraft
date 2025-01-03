@@ -20,7 +20,7 @@ function Hero() {
 
   return (
     <div className="hero" id="home">
-      <img src="/src/assets/spacecraft-logo.png" alt="spacecraftlogo" />
+      <img src="/Spacecraft/assets/spacecraft-logo.png" alt="spacecraftlogo" />
       <h1 className={`hero-title ${textLoaded ? "text-visible" : ""}`}>
         SPACECRAFT
       </h1>

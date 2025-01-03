@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src="/src/assets/logo.png" alt="Logo" className="nav-logo" />
+      <img src="/Spacecraft/assets/logo.png" alt="Logo" className="nav-logo" />
       <div className="nav-title">Ashoka Astronomy Society</div>
 
       {isMobile && (
