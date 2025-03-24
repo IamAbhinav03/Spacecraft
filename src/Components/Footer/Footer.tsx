@@ -15,16 +15,16 @@ const Footer = () => {
             <h3>Follow Us</h3>
             <div className="social-icons">
               <a href="#" aria-label="LinkedIn">
-                <img src="src/assets/icons/linkedin.svg" alt="LinkedIn" />
+                <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
               </a>
               <a
                 href="https://www.instagram.com/astronomy_ashoka/"
                 aria-label="Instagram"
               >
-                <img src="/src/assets/icons/instagram.svg" alt="Instagram" />
+                <img src="./assets/icons/instagram.svg" alt="Instagram" />
               </a>
               <a href="#" aria-label="Twitter">
-                <img src="src/assets/icons/twitter(1).png" alt="Twitter" />
+                <img src="./assets/icons/twitter(1).png" alt="Twitter" />
               </a>
             </div>
             <p>Icons by Icon8</p>
