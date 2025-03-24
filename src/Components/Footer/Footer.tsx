@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2025 Astronomy Club. All rights reserved.</p>
+        <p>© 2025 Ashoka Astronomy Society. All rights reserved.</p>
       </div>
     </footer>
   );

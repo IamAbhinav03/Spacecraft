@@ -57,7 +57,7 @@ const Events = () => {
     {
       id: 4,
       name: "Talk by Prof. K P Singh",
-      image: "src/assets/talk.png",
+      image: "/src/assets/talk.png",
       date: "08 February, 2025",
       time: "02:00 PM - 03:00 PM",
       venue: "Ashoka University",

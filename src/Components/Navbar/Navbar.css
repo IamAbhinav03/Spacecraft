@@ -90,6 +90,7 @@
     margin: 0;
     text-align: center;
     flex-grow: 1;
+    color: white;
   }
 
   .hamburger {
