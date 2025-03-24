@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0 20px;
   position: relative;
   /* overflow: hidden; */
@@ -89,15 +89,15 @@
   }
 
   /* For the outlined text */
-  .hero-title::before {
-    content: "SPACECRAFT";
-    position: absolute;
-    top: 0;
-    left: 2px; /* Adjust for the slight 3D effect */
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    z-index: -1;
-  }
+  /* .hero-title::before { */
+  /* content: "SPACECRAFT"; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 2px; Adjust for the slight 3D effect */
+  /* color: transparent; */
+  /* -webkit-text-stroke: 2px white; */
+  /* z-index: -1; */
+  /* } */
 
   .hero-buttons {
     flex-direction: column;
@@ -119,5 +119,9 @@
   .hero-title {
     font-size: 36px;
     letter-spacing: 3px;
+  }
+
+  .hero-title::before {
+    display: none;
   }
 }
