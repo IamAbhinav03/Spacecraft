@@ -4,6 +4,7 @@ import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 // import ParallaxContainer from "./Components/ParallaxContainer/ParallaxContainer";
 import Events from "./Components/Events/Events";
+import Highlights from "./Components/Highlights/Highlights";
 import FAQ from "./Components/Faq/Faq";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Events></Events>
+      <Highlights></Highlights>
       <FAQ></FAQ>
       <Footer></Footer>
     </div>
