@@ -25,7 +25,15 @@ function Navbar() {
   return (
     <nav className="navbar">
       <img src="./assets/logo.png" alt="Logo" className="nav-logo" />
-      <div className="nav-title">Ashoka Astronomy Society</div>
+      <div className="nav-title">
+        <a
+          href="https://astrosoc.netlify.app"
+          target="_blank"
+          style={{ color: "inherit" }}
+        >
+          Ashoka Astronomy Society
+        </a>
+      </div>
 
       {isMobile && (
         <button
