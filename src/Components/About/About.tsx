@@ -30,7 +30,7 @@ function About() {
         </p>
         <p>
           💫 Don’t miss out! For a{" "}
-          <span className="highlight">one-time registration fee of ₹100</span>,
+          <span className="highlight">one-time registration fee of ₹200</span>,
           you gain access to all talks, events, and workshops. Let’s make this
           an unforgettable journey through the cosmos!
         </p>
