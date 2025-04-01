@@ -26,7 +26,7 @@ const Events = () => {
       venue: "Ashoka Unniversity",
       prizePool: "₹45,000",
       description:
-        "Assemble your team of 2-4 and test yoru engineering skills! IN just 2 hours(11:00 AM - 01:00 PM, desing and build a water-pressurized bottle rocket using basic materails and a mock budget. STratergize the perfect water level, air pressure, and launch angle for optimal performance. Then, launch your creation from out cutom-build pad (3:00 PM - 6:00 PM).",
+        "Assemble your team of 2-5 and test your engineering skills! In just 2 hours(11:00 AM - 01:00 PM, desing and build a water-pressurized bottle rocket using basic materails and a mock budget. Stratergize the perfect water level, air pressure, and launch angle for optimal performance. Then, launch your creation from out cutom-build pad (3:00 PM - 6:00 PM).",
       registrationLink: "https://forms.gle/QT3f3RbbQavc8V6a9",
     },
 
